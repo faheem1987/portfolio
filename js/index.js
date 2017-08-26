@@ -36,11 +36,11 @@ $(document).ready(function() {
       company = "Apple Inc"
     } else if (ele === "sams-old"){
       duration = "Sept, 2015 - June, 2016";
-      icon = "<span class='ion-ios-calendar-outline'> > 1 year</span>"
+      icon = "<span class='ion-ios-calendar-outline'> < 1 year</span>"
       company = "Sams Club"
     } else if (ele === "sams-new") {
       duration = "July, 2016 - Present";
-      icon = "<span class='ion-ios-calendar-outline'> < 1 year</span>"
+      icon = "<span class='ion-ios-calendar-outline'> > 1 year</span>"
       company = "Sams Club"
     }
 

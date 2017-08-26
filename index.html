@@ -3,23 +3,33 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+
   <title>Portfolio</title>
 </head>
 <body>
   <div class="container">
-    <header>
-      <div class="site-logo"></div>
-      <div class="title-wrapper">
-        <h1 class="title">Faheem Ahmad</h1>
-        <h4 class="sub-title">Front-End Developer</h4>
+    <header class="row">
+      <div class="col-sm-12">
+        <div class="site-logo">
+          <img src="./img/udacity_mark_small.png" 
+            sizes="(max-width: 350px) 50px, (max-width: 450px) 70px, (min-width: 451px) 100px"
+            srcset="./img/udacity_mark_small.png 70w, ./img/udacity_mark.png 100w" alt="Udacity logo">
+        </div>
+        <div class="title-wrapper">
+          <h1 class="title">Faheem Ahmad</h1>
+          <h4 class="sub-title">Front-End Developer</h4>
+        </div>
       </div>
     </header>
+
     <main class="row">
-      <section class="col-sm-12">
+      <section class="col-sm-12 intro-wrapper">
         <article class="introduction">
           <h2 class="about">About</h2>
           <p>Hello! My name is Faheem Ahmad. I’m a Front end software engineer with a Computer Science background. I’ve built JavaScript applications using modern technologies and tools such as JQuery, React, Angular and Node. I’m confident, with my background and experience. I could bring value to your company and hit the ground running!</p>
@@ -31,45 +41,64 @@
           </div>
         </article>
       </section>
-      <section class="col-sm-12 work">
-        <h2 class="work-heading">Featured Work</h2>
-        <div class="col-sm-6 col-md-4 project">
-          <figure class="sams-new">
-            <img src="./img/sams.png" class="img-responsive">
-            <figcaption>Sams Club</figcaption>
-          </figure>
+
+      <section class="col-sm-12 work-wrapper">
+        <div class="row">
+          <div class="col-sm-12">
+            <h2 class="work-heading">Featured Work</h2>
+          </div>
         </div>
-        <div class="col-sm-6 col-md-4 project">
-          <figure class="sams-old">
-            <img src="./img/sams.png" class="img-responsive">
-            <figcaption>Sams Club</figcaption>
-          </figure>
-        </div>
-        <div class="col-sm-6 col-md-4 project">
-          <figure class="apple">
-            <img src="./img/applelogo.png" class="img-responsive">
-            <figcaption>Apple</figcaption>
-          </figure>
-        </div>
+        <div class="row work">
+          <div class="col-sm-6 col-md-4 project">
+            <figure class="sams-new">
+              <img src="./img/sams.png" class="img-responsive" alt="Sams club">
+              <figcaption>Sams Club</figcaption>
+            </figure>
+          </div>
+
+          <div class="col-sm-6 col-md-4 project">
+            <figure class="sams-old">
+              <img src="./img/sams.png" class="img-responsive" alt="Sams club">
+              <figcaption>Sams Club</figcaption>
+            </figure>
+          </div>
+
+          <div class="col-sm-6 col-md-4 project">
+            <figure class="apple">
+              <img src="./img/applelogo.png" class="img-responsive" alt="Apple">
+              <figcaption>Apple</figcaption>
+            </figure>
+          </div>
+          </div>
       </section>
+
     </main>
+  </div>
+  <div class="container-fluid">
+    <footer class="row footer">
+      <div class="col-sm-12">
+        <span class="social-gh">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </span>
+        <span class="social-linkedin">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </span>
+      </div>
+    </footer>
   </div>
   <div class="modal fade bd-example-modal-lg" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
-        <div class="row">
-          <h4 class="company-name"></h4>
-          <h5 class="duration"></h5>
-        </div>
+        <h4 class="company-name"></h4>
+
+        <h5 class="duration"></h5>
+
         <ul></ul>
       </div>
     </div>
   </div>
-  <footer class="footer">
-    Portfolio
-  </footer>
-  <script type="text/javascript" src="./js/jquery-3.2.1.slim.min.js"></script>
-  <script type="text/javascript" src="./js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="./js/index.js"></script>
+  <script src="./js/jquery-3.2.1.slim.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
